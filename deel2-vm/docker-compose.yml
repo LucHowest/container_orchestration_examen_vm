@@ -1,13 +1,13 @@
 services:
   api:
-    image: nathansegers/containers_23-24_december_api:versie1
+    image: lucstienne/containers_23-24_december_api:versie1
     build:
       context: ./api
       dockerfile: dockerfile
     ports:
       - 8001:80
   frontend:
-    image: nathansegers/containers_23-24_december_frontend:versie1
+    image: lucstienne/containers_23-24_december_frontend:versie1
     build:
       context: ./frontend
       dockerfile: Dockerfile
