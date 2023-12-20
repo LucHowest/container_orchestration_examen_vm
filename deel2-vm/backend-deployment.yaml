@@ -22,3 +22,14 @@ spec:
           limits:
             cpu: "0.5"
             memory: "512Mi"
+        env:
+        - name: NAME
+          valueFrom:
+            configMapKeyRef:
+              name: backend-config
+              key: NAME
+        - name: DATE
+          valueFrom:
+            configMapKeyRef:
+              name: backend-config
+              key: DATE
