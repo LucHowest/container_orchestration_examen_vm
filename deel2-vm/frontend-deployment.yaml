@@ -27,3 +27,5 @@ spec:
             limits:
               cpu: "1"
               memory: "512Mi"
+      nodeSelector:
+        kubernetes.io/hostname: k3d-k3s-default-agent-2
